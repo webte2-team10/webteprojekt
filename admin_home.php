@@ -1,6 +1,4 @@
 <?php
-//ked je prihlaseny student a snazi sa spirstupnit admina, tak ho to hodi na login bez odhlasenia
-
 //dat na zaciatok stranok, ktore maju byt pristupne len pre admina
 include('functions.php');
 if (!isAdmin()) {
