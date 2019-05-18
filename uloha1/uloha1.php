@@ -81,15 +81,18 @@ if (mysqli_connect_errno()) {
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://147.175.121.210:4472/cvicenia/projekt/styles/style.css">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="tablePDF.js"></script>
 
 </head>
 
 
-<header>
-    <h1>Zobrazenie výsledkov</h1>
-</header>
+<?php
+$currentPage = "Task1";
+include('../navbar.php');
+?>
+
 
 <body>
 
