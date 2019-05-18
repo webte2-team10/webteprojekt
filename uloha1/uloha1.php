@@ -70,10 +70,14 @@ if (mysqli_connect_errno()) {
 
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Zobrazenie výsledkov</title>
+
+
+    <title> <?php echo($_SESSION["language"] == "sk") ? 'Zobrazenie výsledkov' : 'Course results' ?></title>
     <meta charset="utf-8">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -107,12 +111,13 @@ $studentId = $_SESSION['user']['id'];
 
             
             <form id="uploadForm" method="post" enctype="multipart/form-data" action="uloha1.php">
-                <p style="font-weight: bold; text-align: center; font-size:1.2em">Nahrať výsledky</p>
+                <p style="font-weight: bold; text-align: center; font-size:1.2em">';  echo($_SESSION["language"] == "sk") ? 'Nahrať výsledky' : 'Upload course results';
+        echo'</p>
             
                 <div class="form-row">
                     
                     <div class="form-group col-md-4">
-                    <label>Školský rok: </label><br>
+                    <label>'; echo($_SESSION["language"] == "sk") ? 'školský rok' : 'academic year'; echo'</label><br>
                     <select class="form-control" name="year">
                         <option value="2018/2019" selected>2018/2019</option>
                         <option value="2017/2018">2017/2018</option>
@@ -129,13 +134,13 @@ $studentId = $_SESSION['user']['id'];
 
 
                      <div class="form-group col-md-4">
-                        <label>Názov predmetu:</label><br>
+                        <label>';echo($_SESSION["language"] == "sk") ? 'názov predmetu' : 'course name';echo'</label><br>
                         <input class="form-control" type="text" name="subject" value="" required>
                         <br>
                      </div>
 
                       <div class="form-group col-md-4">
-                        <label>Oddelovač v CSV súbore:</label><br>
+                        <label>';echo($_SESSION["language"] == "sk") ? 'Oddelovač v CSV súbore' : 'CSV file delimiter';echo'</label><br>
                         <input class="form-control" type="text" name="delimiter" value=";" required>
                         <br>
                       </div>
@@ -143,7 +148,7 @@ $studentId = $_SESSION['user']['id'];
 
 
                     <div class="custom-file">
-                        <label class="custom-file-label" for="inputGroupFile01">Vybrať súbor:</label>
+                        <label class="custom-file-label" for="inputGroupFile01">';echo($_SESSION["language"] == "sk") ? 'vybrať súbor:' : 'choose file';echo'</label>
                         <input type="file" name="csvInput" class="custom-file-input" id="inputGroupFile01"
                                aria-describedby="inputGroupFileAddon01" required>
                     </div>
@@ -151,7 +156,7 @@ $studentId = $_SESSION['user']['id'];
 
 
                 <br><br>
-                        <input type="submit" name="uploadFile" class="btn btn-primary" value="Nahrať">
+                        <input type="submit" name="uploadFile" class="btn btn-primary" value="';echo($_SESSION["language"] == "sk") ? 'nahrať' : 'upload';echo'">
 
                  </form>
 
@@ -162,7 +167,7 @@ $studentId = $_SESSION['user']['id'];
            echo '<form id="deleteForm"  method="post" action="uloha1.php">
                 <div class="form-row">
                 <div class="form-group">
-                        <label>Vymazať predmet</label><br>
+                        <label>';echo($_SESSION["language"] == "sk") ? 'vymazať predmet' : 'remove course'; echo'</label><br>
                     <select id="deleteInput" class="form-control" name="subjectDelete" >';
 
                         //naplnenie selectu hodnotami z databazy
@@ -178,7 +183,7 @@ $studentId = $_SESSION['user']['id'];
                     <br>
 
                     <div class="form-group">
-                        <input type="submit" name="delete" class="btn btn-primary" value="Vymazať">
+                        <input type="submit" name="delete" class="btn btn-primary" value="';echo($_SESSION["language"] == "sk") ? 'vymazať' : 'remove'; echo'">
                     </div>
 
                 </div>
@@ -186,15 +191,15 @@ $studentId = $_SESSION['user']['id'];
              <br>';
 
            echo '<form id="FilterForm"  method="post" action="uloha1.php">
-                <p id="formTitle">Obmedziť výber<p>
+                <p id="formTitle">';echo($_SESSION["language"] == "sk") ? 'obmedziť výber' : 'course filter'; echo'<p>
 
 
 
                 <div class="form-row">
                 <div class="form-group col-md-6">
-                        <label>Predmet:</label><br>
+                        <label>';echo($_SESSION["language"] == "sk") ? 'predmet' : 'course'; echo'</label><br>
                         <select class="form-control" name="subjectFilter">
-                            <option value="all" selected>Všetky</option>';
+                            <option value="all" selected>';echo($_SESSION["language"] == "sk") ? 'všetky' : 'all'; echo'</option>';
 
                             //naplnenie selectu hodnotami z databazy
                                  $fillSubjects = "SELECT * FROM Predmety";
@@ -210,9 +215,9 @@ $studentId = $_SESSION['user']['id'];
 
 
                 <div class="form-group col-md-6">
-                        <label> Školský rok: </label><br>
+                        <label>';echo($_SESSION["language"] == "sk") ? 'školský rok' : 'academic year'; echo'</label><br>
                         <select class="form-control" name="filterYear">
-                            <option value="all" selected>Všetky</option>
+                            <option value="all" selected>';echo($_SESSION["language"] == "sk") ? 'všetky roky' : 'all years'; echo'</option>
                             <option value="2018/2019">2018/2019</option>
                             <option value="2017/2018">2017/2018</option>
                             <option value="2016/2017">2016/2017</option>
@@ -227,7 +232,7 @@ $studentId = $_SESSION['user']['id'];
 
                 </div>
 
-                <input id="filterBtn" type="submit" name="filter" class="btn btn-primary" value="Potvrdiť">
+                <input id="filterBtn" type="submit" name="filter" class="btn btn-primary" value="ok">
              </form>
 
         </div>';
@@ -241,10 +246,22 @@ $studentId = $_SESSION['user']['id'];
 //vypis tabuliek
 if(isset($_POST['filter'])&& $_POST['subjectFilter'] != "all") {
     $subjname = $_POST['subjectFilter'];
-    echo('<h2>Prehľad výsledkov '.$subjname.' '.$_POST['filterYear'].'</h2>');
+
+    if($_POST['filterYear'] == "all") {
+        echo('<h2>');
+        echo ($_SESSION["language"] == "sk") ? 'Prehľad výsledkov z predmetu ' . $subjname  : 'Results of course ' . $subjname ;
+        echo('</h2>');
+    } else {
+        echo('<h2>');
+        echo ($_SESSION["language"] == "sk") ? 'Prehľad výsledkov z predmetu ' . $subjname . ' zo školského roku ' . $_POST['filterYear'] : 'Results of course ' . $subjname . ' from the academic year of ' . $_POST['filterYear'];
+        echo('</h2>');
+    }
+
     $subjects = "SELECT * FROM Predmety WHERE nazov='$subjname'";
 } else {
-    echo('<h2>Prehľad výsledkov všetkých predmetov</h2>');
+    echo('<h2>');
+    echo($_SESSION["language"] == "sk") ? 'Prehľad výsledkov všetkých predmetov' : 'Results of all courses';
+    echo('</h2>');
     $subjects = "SELECT * FROM Predmety";
 
 }
@@ -259,7 +276,10 @@ if($studentId != 0) {
     $queryName = "SELECT meno FROM studenti WHERE id=$studentId";
     $resultName = mysqli_query($connect, $queryName);
     $studentName = mysqli_fetch_array($resultName);
-    echo('<h2>Aktuálne prihlásený študent: '.$studentName[0].'</h2>');
+
+    echo('<h2>');
+    echo($_SESSION["language"] == "sk") ? 'Aktuálne prihlásený študent: '.$studentName[0] : 'Currently logged in as student: '.$studentName[0];
+    echo('</h2>');
 }
 
 
@@ -283,7 +303,7 @@ while($row = mysqli_fetch_array($results))
         }
 }
 if($empty) {
-    echo('<p id="msg"> <i class="fas fa-exclamation-triangle"></i>    Neboli nájdené žiadne záznamy. <p>');
+    echo'<p id="msg"> <i class="fas fa-exclamation-triangle"></i>'; echo($_SESSION["language"] == "sk") ? 'Neboli nájdené žiadne záznamy' : 'No results have been found for given request'; echo'<p>';
 }
 ?>
 </article>
