@@ -1,3 +1,4 @@
+
 <?php
 //ked je prihlaseny student a snazi sa spirstupnit admina, tak ho to hodi na login bez odhlasenia
 
@@ -67,3 +68,4 @@ if (!isAdmin()) {
 </main>
 </body>
 </html>
+

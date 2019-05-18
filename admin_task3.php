@@ -1,3 +1,4 @@
+
 <?php
 //dat na zaciatok stranok, ktore maju byt pristupne len pre admina
 include('functions.php');
@@ -51,4 +52,5 @@ if (!isAdmin()) {
 
 </main>
 </body>
+
 </html>

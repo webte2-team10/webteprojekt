@@ -1,3 +1,4 @@
+
 <?php
 
 //dat na zaciatok stranok, ktore maju byt pristupne len pre studentov
