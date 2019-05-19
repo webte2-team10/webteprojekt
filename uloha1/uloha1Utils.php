@@ -44,46 +44,46 @@ function printSubjectAll($connect,$name,$database,$ids,$year,$studentId) {
     //vypisanie table header pre admina
     if($studentId == 0) {
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'id študenta' : 'student id';
+        echo($_SESSION["lang"] == "sk") ? 'id študenta' : 'student id';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'meno študenta' : 'student name';
+        echo($_SESSION["lang"] == "sk") ? 'meno študenta' : 'student name';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'zápočet' : 'student credit';
+        echo($_SESSION["lang"] == "sk") ? 'zápočet' : 'student credit';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'skúška - riadny termín' : 'Exam - first term';
+        echo($_SESSION["lang"] == "sk") ? 'skúška - riadny termín' : 'Exam - first term';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'skúška - opravný termín' : 'Exam - second term';
+        echo($_SESSION["lang"] == "sk") ? 'skúška - opravný termín' : 'Exam - second term';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'spolu' : 'sum';
+        echo($_SESSION["lang"] == "sk") ? 'spolu' : 'sum';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'známka' : 'grade';
+        echo($_SESSION["lang"] == "sk") ? 'známka' : 'grade';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'akademický rok ' : 'academic year';
+        echo($_SESSION["lang"] == "sk") ? 'akademický rok ' : 'academic year';
         echo('</th>');
     }
     //vypisanie table header pre studenta
     else {
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'zápočet' : 'student credit';
+        echo($_SESSION["lang"] == "sk") ? 'zápočet' : 'student credit';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'skúška - riadny termín' : 'Exam - first term';
+        echo($_SESSION["lang"] == "sk") ? 'skúška - riadny termín' : 'Exam - first term';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'skúška - opravný termín' : 'Exam - second term';
+        echo($_SESSION["lang"] == "sk") ? 'skúška - opravný termín' : 'Exam - second term';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'spolu' : 'sum';
+        echo($_SESSION["lang"] == "sk") ? 'spolu' : 'sum';
         echo('</th>');
         echo('<th>');
-        echo($_SESSION["language"] == "sk") ? 'známka' : 'grade';
+        echo($_SESSION["lang"] == "sk") ? 'známka' : 'grade';
         echo('</th>');
 
     }
@@ -102,7 +102,7 @@ function printSubjectAll($connect,$name,$database,$ids,$year,$studentId) {
 
     //button na vytlacenie pdf pre danu tabulku
     if($studentId == 0) {
-        echo '</table>   </div>   </div>   <button onclick="javascript:demoFromHTML(\'' . WEBTE1 . '\')">'; echo($_SESSION["language"] == "sk") ? 'stiahnuť PDF' : 'download PDF'; echo'</button> ';
+        echo '</table>   </div>   </div>   <button onclick="javascript:demoFromHTML(\'' . WEBTE1 . '\')">'; echo($_SESSION["lang"] == "sk") ? 'stiahnuť PDF' : 'download PDF'; echo'</button> ';
     } else {
         echo '</table>   </div>   </div> ';
     }
