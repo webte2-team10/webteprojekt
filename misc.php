@@ -5,8 +5,8 @@ include('functions.php');
 include('lang.php');    //treba includnut aj script.js
 
 if (!isLoggedIn() && !isAdmin()) {
-    $_SESSION['msg'] = "You must log in first ಠ_ಠ";
-    header('location: login.php');
+    $_SESSION['msg'] = _ErrorLogin;
+    header('location: index.php');
 }
 ?>
 
@@ -18,6 +18,8 @@ if (!isLoggedIn() && !isAdmin()) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="scripts/js/script.js"></script>
+    <link rel="icon" type="image/png" href="pics/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="pics/favicon-16x16.png" sizes="16x16" />
 </head>
 <body>
 
@@ -28,17 +30,15 @@ include('navbar.php');
 
 <main>
     <div class="container">
-        <h2><?= _DalsieInfo ?></h2>
-        <a href="https://147.175.121.210:4472/cvicenia/projekt/technicka_dokumentacia"><?= _TechDok?></a>
+        <h1><?= _DalsieInfo ?></h1>
+        <a href="https://147.175.121.210:4472/cvicenia/projekt/technicka_dokumentacia.pdf"><?= _TechDok?></a>
         <h3><?= _RozdelenieUloh ?></h3>
-        <table class="table table-bordered">
-            <thead>
+        <table class="table table-bordered table-striped">
+            <tbody>
             <tr>
                 <th><?= _Meno ?></th>
                 <th><?= _Uloha?></th>
             </tr>
-            </thead>
-            <tbody>
             <tr>
                 <td>Dávid Zakhariás</td>
                 <td><?= _UlohaDavid ?></td>

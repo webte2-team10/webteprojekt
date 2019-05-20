@@ -33,7 +33,7 @@
                     </select>
                 </form></li>
                 <?php if ($currentPage === 'Login') : ?>
-                    <li><a href="https://147.175.121.210:4472/cvicenia/projekt/login.php"><span class="glyphicon glyphicon-log-in"></span> <?= _TlacidloPrihlasit ?></a></li>
+                    <li><a href="https://147.175.121.210:4472/cvicenia/projekt/index.php"><span class="glyphicon glyphicon-log-in"></span> <?= _TlacidloPrihlasit ?></a></li>
                 <?php elseif(!isAdmin()) : ?>
                     <li><a href="https://147.175.121.210:4472/cvicenia/projekt/student_home.php?logout='1'"><span class="glyphicon glyphicon-log-out"></span> <?= _Odhlasit ?></a></li>
                 <?php else  : ?>
