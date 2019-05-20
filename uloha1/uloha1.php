@@ -84,7 +84,7 @@ if (mysqli_connect_errno()) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <script src="../scripts/js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
@@ -151,7 +151,7 @@ $studentId = $_SESSION['user']['id'];
                       </div>
                 </div>
 
-
+                       <div align="center">
                     <div class="custom-file">
                         <label class="custom-file-label" for="inputGroupFile01">';echo($_SESSION["lang"] == "sk") ? 'vybrať súbor:' : 'choose file';echo'</label>
                         <input type="file" name="csvInput" class="custom-file-input" id="inputGroupFile01"
@@ -161,8 +161,9 @@ $studentId = $_SESSION['user']['id'];
 
 
                 <br><br>
+                 
                         <input type="submit" name="uploadFile" class="btn btn-primary" value="';echo($_SESSION["lang"] == "sk") ? 'nahrať' : 'upload';echo'">
-
+                    </div;
                  </form>
 
                 <br>';
@@ -236,9 +237,12 @@ $studentId = $_SESSION['user']['id'];
                     </div>
 
                 </div>
+                
+                <div class="custom-file">
 
                 <input id="filterBtn" type="submit" name="filter" class="btn btn-primary" value="ok">
              </form>
+             </div>
 
         </div>';
 
