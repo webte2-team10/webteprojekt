@@ -1,1 +1,9 @@
 
+ .navbar {
+     border-radius: 0px;
+ }
+
+
+ img:hover {
+     cursor: pointer;
+ }
