@@ -1,0 +1,21 @@
+<?php
+define("_Phase", "Generate and send access data");
+define("_FirstPhase","Password generator");
+define("_File1","CSV file");
+define("_Separator","Separator");
+define("_Generate","Generate");
+define("_SecondPhase","Email sender");
+define("_File2","Extension");
+define("_TitleMail","Subject");
+define("_Name","Name");
+define("_Password","Password");
+define("_Content","Email content (Columns represent variables written as '{{variable}}'");
+define("_HTML","Send as HTML");
+define("_Send","Send");
+define("_Sender","Sender e-mail");
+define("_Reset","Preset reset");
+define("_Warning1","Column with students emails has to be named as 'email' and students names as 'meno'");
+define("_History","History of sending");
+define("_slovo1","Date of sending");
+define("_slovo2","Students name");
+define("_slovo3","Message title");

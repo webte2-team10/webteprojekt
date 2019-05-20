@@ -1,0 +1,157 @@
+
+#pageHeader {
+    background-color:rgb(0, 0, 0);
+    position: -webkit-sticky;
+    position: sticky;
+    top: -58px;
+    z-index: 1;
+}
+
+#pageTitle {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 0px;
+    margin: 0px;
+}
+
+#pageTitle a {
+    color: white;
+    text-decoration: none;
+}
+
+ .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.row {
+  padding: 3px;
+  margin: 10px;
+  text-align: start;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+}
+
+#vysledok {
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+
+}
+
+#vysledok {
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: start;
+}
+
+td {
+  text-align: start;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.lds-ring {
+  /* display: inline-block; */
+  margin-left: auto;
+  margin-right: auto;
+  /* position: relative; */
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid rgb(43, 39, 43);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(43, 39, 43) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#mapid { height: 200px; z-index: 0;}
+
+#dialog-modal {z-index: 5;}
+
+
+
+#flags {
+position: relative;
+right: 10px;
+top: 5px;
+float:right;
+}
+#flags:hover {
+  cursor: pointer;
+}
+
+h2{
+  text-align: center;
+}
+
+.btn {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+
+.webBodyContent {
+
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+
+}
+
+.hlasky {
+  margin-top: 5px;
+  text-align: center;
+}
