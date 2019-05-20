@@ -63,7 +63,7 @@ if (mysqli_connect_errno()) {
 
             } else {
 
-              $msg = '<label class="text-danger"> Súbor musí mať príponu CSV! </label>';
+              $msg = $_SESSION["lang"] == "sk" ? '<label class="text-danger"> Súbor musí mať príponu CSV! </label>' : '<label class="text-danger"> The file must have a CSV extension! </label>';
             }
         }
     }

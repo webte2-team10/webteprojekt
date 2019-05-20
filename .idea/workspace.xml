@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12e2a6bf-bf10-4a5a-b7c4-111e4880e7fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uloha1/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/uloha1/uloha1.php" beforeDir="false" afterPath="$PROJECT_DIR$/uloha1/uloha1.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uloha1/uloha1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="244" column="13" lean-forward="true" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
+            <state relative-caret-position="202">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -26,34 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha2/student_task2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="334" column="35" lean-forward="true" selection-start-line="334" selection-start-column="35" selection-end-line="334" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha1/uloha1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="85" column="104" selection-start-line="85" selection-start-column="104" selection-end-line="85" selection-end-column="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha1/uloha1Utils.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="25" />
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -63,27 +39,9 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha2/admin_task2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha3/admin_task3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408" />
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uloha1/tablePDF.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -104,8 +62,8 @@
       <list>
         <option value="&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/navbar.php" />
         <option value="$PROJECT_DIR$/uloha1/uloha1Utils.php" />
-        <option value="$PROJECT_DIR$/uloha1/uloha1.php" />
         <option value="&lt;78702a36-f1da-4025-8d82-b21c71bd63f6&gt;/home/xklementova/public_html/cvicenia/projekt/uloha1/uloha1.php" />
+        <option value="$PROJECT_DIR$/uloha1/uloha1.php" />
       </list>
     </option>
   </component>
@@ -120,7 +78,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,18 +136,19 @@
       <updated>1558215519167</updated>
       <workItem from="1558215520900" duration="7208000" />
       <workItem from="1558268554436" duration="2551000" />
-      <workItem from="1558364828887" duration="637000" />
+      <workItem from="1558364828887" duration="1341000" />
+      <workItem from="1558384350360" duration="542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10396000" />
+    <option name="totallyTimeSpent" value="11642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15167785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15369128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -208,7 +167,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.15503356" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.15503356" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -226,25 +185,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uloha1/uloha1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uloha2/admin_task2.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/uloha1/uloha1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="244" column="13" lean-forward="true" selection-start-line="244" selection-start-column="13" selection-end-line="244" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/uloha1/tablePDF.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
