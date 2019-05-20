@@ -230,9 +230,9 @@ include('../navbar.php');
                 $suhlas_admina = $row['suhlas'];
                 $hidden = '';
 
-                if ($teamove_body != 0 && $teamove_body != null) {
+                /*if ($teamove_body != 0 && $teamove_body != null) {
                     $Udelenie_bodov = "disabled";
-                }
+                }*/
 
                 //suhlas clenov timov --> suhlas admina povoleny
                 $sql2 = "SELECT * FROM zaznam 
