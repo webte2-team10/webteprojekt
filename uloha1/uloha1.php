@@ -19,7 +19,7 @@ if(isLoggedIn()) {
     }
 
 } else {
-    header('location: https://147.175.121.210:4472/cvicenia/projekt/login.php');
+    header('location: https://147.175.121.210:4472/cvicenia/projekt/index.php');
 
 }
 
@@ -62,7 +62,6 @@ if (mysqli_connect_errno()) {
                 fclose($fileHandler);
 
             } else {
-
               $msg = $_SESSION["lang"] == "sk" ? '<label class="text-danger"> Súbor musí mať príponu CSV! </label>' : '<label class="text-danger"> The file must have a CSV extension! </label>';
             }
         }
@@ -156,11 +155,12 @@ $studentId = $_SESSION['user']['id'];
                         <label class="custom-file-label" for="inputGroupFile01">';echo($_SESSION["lang"] == "sk") ? 'vybrať súbor:' : 'choose file';echo'</label>
                         <input type="file" name="csvInput" class="custom-file-input" id="inputGroupFile01"
                                aria-describedby="inputGroupFileAddon01" required>
-                    </div>
+                    </div>';echo($msg);
 
 
 
-                <br><br>
+
+        echo'<br><br>
                  
                         <input type="submit" name="uploadFile" class="btn btn-primary" value="';echo($_SESSION["lang"] == "sk") ? 'nahrať' : 'upload';echo'">
                     </div;
